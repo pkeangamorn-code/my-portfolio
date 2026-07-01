@@ -1,131 +1,174 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fb;
-            margin: 0;
-            padding: 30px;
-            color: #333;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
+body{
+    background:#f2f2f2;
+}
 
-        h1, h2, h3, h4 {
-            color: #0d6efd;
-        }
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-        blockquote {
-            background: #eef5ff;
-            border-left: 5px solid #0d6efd;
-            padding: 10px 15px;
-            font-style: italic;
-            border-radius: 5px;
-        }
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
 
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            border-radius: 10px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+}
 
-        ul {
-            line-height: 1.8;
-        }
+nav a:hover{
+    color:yellow;
+}
 
-        a {
-            color: #0d6efd;
-            text-decoration: none;
-        }
+section{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+img{
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+}
 
-        hr {
-            margin: 30px 0;
-        }
-    </style>
+blockquote{
+    background:#eef5ff;
+    border-left:5px solid #0d6efd;
+    padding:10px;
+    margin:20px 0;
+    font-style:italic;
+}
+
+ul{
+    margin-left:20px;
+    line-height:2;
+}
+
+footer{
+    text-align:center;
+    background:#0d6efd;
+    color:white;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+
 </head>
+
 <body>
 
-<div class="container">
+<header>
+    <h1>🪪 แนะนำตัว</h1>
+</header>
 
-    <h1>ยินดีต้อนรับสู่ส่วนประวัติส่วนตัว 🪪</h1>
+<nav>
+    <a href="#home">หน้าหลัก</a>
+    <a href="#skill">ส่วนทักษะและความสามารถ</a>
+    <a href="#contact">ช่องทางการติดต่อ</a>
+</nav>
 
-    <h3>🙎‍♂️ นาย พลังโชค เคียงอมร ✝︎</h3>
-    <h4>🏫 ระดับชั้น ปวช.3 สาขาเทคโนโลยีสารสนเทศ</h4>
+<!-- หน้าแนะนำตัว -->
+<section id="home">
+
+    <h2>🙎‍♂️ ประวัติส่วนตัว</h2>
+
+    <h3>นาย พลังโชค เคียงอมร ✝️</h3>
+
+    <p><strong>ระดับชั้น :</strong> ปวช.3 สาขาเทคโนโลยีสารสนเทศ</p>
 
     <blockquote>
         "เรียนไปเดี๋ยวก็จบเอง 🤝"
     </blockquote>
 
     <img src="https://github.com/user-attachments/assets/70acd534-ec36-47c8-b24d-cd2a5d83de7a"
-         alt="รูปภาพส่วนตัว"
-         width="281">
+    width="250">
 
-    <hr>
+    <h2>💯 โปรเจกต์จบ</h2>
 
-    <h2>ส่วนทักษะและความสามารถ 💎</h2>
+    <p><b>ชื่อโปรเจกต์ :</b> มีนามีข้าว ระบบสั่งอาหารผ่าน QR Code</p>
 
-    <ul>
-        <li>🖥️ โปรแกรมคอมพิวเตอร์ที่ใช้งานเป็น :
-            <strong>Word, Excel, Visual Studio Code</strong>
-        </li>
+    <p><b>เหตุผล :</b> ช่วยลดการรับออเดอร์ผิดพลาด และเพิ่มความสะดวกในการสั่งอาหาร</p>
 
-        <li>🖨️ ภาษาคอมพิวเตอร์ที่เคยเรียน :
-            <strong>HTML, CSS, JavaScript, PHP, SQL</strong>
-        </li>
-    </ul>
-
-    <hr>
-
-    <h2>ส่วนข้อมูลโปรเจกต์จบ ปวช.3 (Final Project) 💯</h2>
-
-    <ul>
-        <li>👥 <strong>โปรเจกต์กลุ่ม :</strong> มีนามีข้าว ระบบสั่งอาหารผ่าน QR Code สำหรับลูกค้า</li>
-
-        <li>🛠️ <strong>เหตุผลที่เลือกทำ :</strong>
-            ช่วยแก้ปัญหาการรับออเดอร์ผิดพลาด และลดเวลาการสั่งอาหารในช่วงที่พนักงานยุ่ง
-        </li>
-
-        <li>🙋‍♂️ <strong>หน้าที่หลัก :</strong>
-            หาปัญหาที่เกิดขึ้นและเสนอวิธีแก้ไขให้สะดวกและมีประสิทธิภาพมากขึ้น
-        </li>
-    </ul>
+    <p><b>หน้าที่ :</b> วิเคราะห์ปัญหาและหาแนวทางแก้ไขให้ระบบใช้งานสะดวกขึ้น</p>
 
     <img src="https://github.com/user-attachments/assets/73db479c-4ece-4e46-9252-72f0fb53ec8b"
-         alt="รูปโปรเจกต์"
-         width="700">
+    width="650">
 
-    <hr>
+</section>
 
-    <h2>📬 ช่องทางการติดต่อ ⚡</h2>
+<!-- ทักษะ -->
+<section id="skill">
+
+    <h2>💎 ส่วนทักษะและความสามารถ</h2>
 
     <ul>
-        <li>✉️ Email :
+        <li>🖥️ โปรแกรมที่ใช้งานได้
+            <ul>
+                <li>Microsoft Word</li>
+                <li>Microsoft Excel</li>
+                <li>Visual Studio Code</li>
+            </ul>
+        </li>
+
+        <li>💻 ภาษาที่เคยเรียน
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>SQL</li>
+            </ul>
+        </li>
+    </ul>
+
+</section>
+
+<!-- ติดต่อ -->
+<section id="contact">
+
+    <h2>📬 ช่องทางการติดต่อ</h2>
+
+    <ul>
+        <li>📧 Email :
             <a href="mailto:pkeangamorn@gmail.com">
                 pkeangamorn@gmail.com
             </a>
         </li>
 
-        <li>📱 เบอร์โทรศัพท์ : 062-650-9399</li>
+        <li>📱 โทรศัพท์ : 062-650-9399</li>
     </ul>
 
-</div>
+</section>
+
+<footer>
+    © 2026 พลังโชค เคียงอมร
+</footer>
 
 </body>
 </html>
