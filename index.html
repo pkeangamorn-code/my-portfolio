@@ -1,174 +1,77 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Profile</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
 body{
-    background:#f2f2f2;
-}
-
-header{
-    background:#0d6efd;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
     color:white;
     text-align:center;
-    padding:20px;
 }
 
-nav{
-    background:#222;
-    text-align:center;
-    padding:15px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:yellow;
-}
-
-section{
+.container{
+    width:80%;
     max-width:900px;
-    margin:30px auto;
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
+    margin:40px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 30px rgba(0,0,0,.5);
 }
 
-img{
-    display:block;
-    margin:20px auto;
-    border-radius:10px;
+h1,h2,h3{
+    color:#38bdf8;
+}
+
+.profile{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 30px #38bdf8;
+    margin:25px auto;
 }
 
 blockquote{
-    background:#eef5ff;
-    border-left:5px solid #0d6efd;
-    padding:10px;
-    margin:20px 0;
+    width:70%;
+    margin:auto;
+    padding:15px;
+    border-left:5px solid #38bdf8;
+    background:#1e293b;
+    border-radius:8px;
     font-style:italic;
 }
 
-ul{
-    margin-left:20px;
+.menu{
+    margin-top:40px;
+}
+
+.menu a{
+    display:inline-block;
+    margin:10px;
+    padding:14px 35px;
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    border-radius:10px;
+    font-size:18px;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(37,99,235,.5);
+}
+
+.menu a:hover{
+    background:#38bdf8;
+    color:#000;
+    transform:translateY(-5px);
+}
+
+.info{
+    margin-top:20px;
     line-height:2;
+    font-size:18px;
 }
 
 footer{
-    text-align:center;
-    background:#0d6efd;
-    color:white;
-    padding:15px;
-    margin-top:30px;
+    margin-top:40px;
+    padding:20px;
+    color:#9ca3af;
 }
-</style>
-
-</head>
-
-<body>
-
-<header>
-    <h1>🪪 แนะนำตัว</h1>
-</header>
-
-<nav>
-    <a href="#home">หน้าหลัก</a>
-    <a href="#skill">ส่วนทักษะและความสามารถ</a>
-    <a href="#contact">ช่องทางการติดต่อ</a>
-</nav>
-
-<!-- หน้าแนะนำตัว -->
-<section id="home">
-
-    <h2>🙎‍♂️ ประวัติส่วนตัว</h2>
-
-    <h3>นาย พลังโชค เคียงอมร ✝️</h3>
-
-    <p><strong>ระดับชั้น :</strong> ปวช.3 สาขาเทคโนโลยีสารสนเทศ</p>
-
-    <blockquote>
-        "เรียนไปเดี๋ยวก็จบเอง 🤝"
-    </blockquote>
-
-    <img src="https://github.com/user-attachments/assets/70acd534-ec36-47c8-b24d-cd2a5d83de7a"
-    width="250">
-
-    <h2>💯 โปรเจกต์จบ</h2>
-
-    <p><b>ชื่อโปรเจกต์ :</b> มีนามีข้าว ระบบสั่งอาหารผ่าน QR Code</p>
-
-    <p><b>เหตุผล :</b> ช่วยลดการรับออเดอร์ผิดพลาด และเพิ่มความสะดวกในการสั่งอาหาร</p>
-
-    <p><b>หน้าที่ :</b> วิเคราะห์ปัญหาและหาแนวทางแก้ไขให้ระบบใช้งานสะดวกขึ้น</p>
-
-    <img src="https://github.com/user-attachments/assets/73db479c-4ece-4e46-9252-72f0fb53ec8b"
-    width="650">
-
-</section>
-
-<!-- ทักษะ -->
-<section id="skill">
-
-    <h2>💎 ส่วนทักษะและความสามารถ</h2>
-
-    <ul>
-        <li>🖥️ โปรแกรมที่ใช้งานได้
-            <ul>
-                <li>Microsoft Word</li>
-                <li>Microsoft Excel</li>
-                <li>Visual Studio Code</li>
-            </ul>
-        </li>
-
-        <li>💻 ภาษาที่เคยเรียน
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>SQL</li>
-            </ul>
-        </li>
-    </ul>
-
-</section>
-
-<!-- ติดต่อ -->
-<section id="contact">
-
-    <h2>📬 ช่องทางการติดต่อ</h2>
-
-    <ul>
-        <li>📧 Email :
-            <a href="mailto:pkeangamorn@gmail.com">
-                pkeangamorn@gmail.com
-            </a>
-        </li>
-
-        <li>📱 โทรศัพท์ : 062-650-9399</li>
-    </ul>
-
-</section>
-
-<footer>
-    © 2026 พลังโชค เคียงอมร
-</footer>
-
-</body>
-</html>
